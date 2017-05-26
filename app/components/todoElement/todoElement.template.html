@@ -1,0 +1,9 @@
+<li>
+    <div>
+        <b>Title:</b> {{$ctrl.item.title}}
+    </div>
+    <div>
+        <button ng-click="$ctrl.update($ctrl.item.id)">{{$ctrl.item.isChecked ? 'active' : 'deactive'}}</button>
+        <button ng-click="$ctrl.remove($ctrl.item.id)">Remove</button>
+    </div>
+</li>

@@ -1,0 +1,10 @@
+<add-todo-component add-todo="$ctrl.addTodo(title)"></add-todo-component>
+<ul>
+    <todo-element-component
+            ng-repeat="item in $ctrl.todoList"
+            item="item"
+            update-item="$ctrl.updateItem(id)"
+            remove-item="$ctrl.removeItem(id)">
+    </todo-element-component>
+</ul>
+<b>Count:</b> {{$ctrl.todoList.length}}
