@@ -13,7 +13,7 @@ function addTodoController() {
     ctrl.todoPlaceholder = 'todo`s title';
     ctrl.buttonMessage = 'Add new todo';
 
-    ctrl.submit = function submit(title) {
+    ctrl.submit = (title) => {
         if (title.trim()) {
             ctrl.addTodo({title});
             ctrl.todoValue = '';

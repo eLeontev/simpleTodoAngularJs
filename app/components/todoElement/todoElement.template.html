@@ -3,7 +3,7 @@
         <b>Title:</b> {{$ctrl.item.title}}
     </div>
     <div>
-        <button ng-click="$ctrl.update($ctrl.item.id)">{{$ctrl.item.isChecked ? 'active' : 'deactive'}}</button>
-        <button ng-click="$ctrl.remove($ctrl.item.id)">Remove</button>
+        <button ng-click="$ctrl.updateItem({id: $ctrl.item.id})">{{$ctrl.item.isChecked ? 'active' : 'deactive'}}</button>
+        <button ng-click="$ctrl.removeItem({id: $ctrl.item.id})">Remove</button>
     </div>
 </li>
